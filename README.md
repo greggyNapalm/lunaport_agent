@@ -1,4 +1,4 @@
 lunaport_agent
 ==============
 
-Load generation sever managment service with HTTP interface
+Daemon with HTTP interface, which manage load testing jobs.
