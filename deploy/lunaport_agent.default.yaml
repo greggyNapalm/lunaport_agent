@@ -1,0 +1,15 @@
+#-----
+# main
+#-----
+logging:
+    level: 'debug' #  *logging* module levels
+    format: '%(asctime)s  %(message)s'
+    handlers:
+        gray_gelf: ['graylog2.company.org', 12201] #  host and port pair
+        file: False #  /full/path/to/file
+        stream: True #  Bool, log to STDOUT or not
+
+#-----------
+# monitoring
+#-----------
+sentry_dsn: '{PROTOCOL}://{PUBLIC_KEY}:{SECRET_KEY}@{HOST}/{PATH}{PROJECT_ID}'

@@ -1,0 +1,19 @@
+Source: python-lunaport-agent
+Section: python
+Priority: optional
+Maintainer: Gregory Komissarov <gregory.komissarov@gmail.com>
+Build-Depends: debhelper (>=7),
+         python (>= 2.7.1-0ubuntu2),
+         python (<< 2.8),
+Standards-Version: 3.8.3
+
+Package: python-lunaport-agent
+Architecture: amd64
+Depends: python (>= 2.7.1-0ubuntu2),
+         python (<< 2.8),
+         python-raven (>=3.4.1),
+         python-yaml (= 3.10-2),
+         supervisor (=3.0a8-1.1),
+         python-lunaport-ext-graypy (>=0.2.9-1),
+Conflicts: python-redis
+Description: Lunaport Agent @see https://github.com/greggyNapalm/lunaport_agent
