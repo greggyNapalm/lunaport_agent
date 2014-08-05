@@ -9,6 +9,9 @@ logging:
         file: False #  /full/path/to/file
         stream: True #  Bool, log to STDOUT or not
 
+auth:
+    is_disabled: True
+
 #-----------
 # monitoring
 #-----------
